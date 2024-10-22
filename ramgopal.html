@@ -190,13 +190,13 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6" style="border 1px solid">
+          <div class="col-md-6" style="border: 1px solid;">
             <p>O- Outstanding - 90-100<br>
               E- Excellent : 80-89<br>
               A- Very Good : 70-79<br>
               B- Good : 60-69<br></p>
           </div>
-          <div class="col-md-6" style="border 1px solid">
+          <div class="col-md-6" style="border: 1px solid;">
             <p>C- Fair : 50-59<br>
               D- Avarage : 40-49<br>
               P- Pass : 30-39<br>
@@ -207,65 +207,7 @@
       <!-- /.form-box -->
     </div>
     <!-- /.register-box -->
-    <script>
-      var app = angular.module('myApp', ['datatables', 'ngResource', 'ckeditor', 'datatables.buttons', 'cgBusy']);
-      app.controller('certController', function ($scope, $http, $resource, DTOptionsBuilder) {
-        $scope.certid = DOMPurify.sanitize("2b0ef97daa2b311ac702c6531c74ef06");
-        $scope.myPromise = $http.get('/pages/home/include/getcert.php?certid=' + $scope.certid)
-          .then(function (response) {
-            // alert(response.data);
-            if (response.data == "null") {
-              $scope.certnotverified = true;
-              $scope.errmsg = "Sorry certificate details not found";
-            }
-            else {
-              errmsg = "";
-              $scope.cert = response.data;
-              $scope.certverified = true;
-            }
-          })
-
-      });
-    </script>
-
-    <!-- Slimscroll -->
-    <script src="./AICTE Inernship Certification Management Portal_files/jquery.slimscroll.min.js.download"></script>
-    <!-- FastClick -->
-    <script src="./AICTE Inernship Certification Management Portal_files/angular-datatables.min.js.download"></script>
-    <script src="./AICTE Inernship Certification Management Portal_files/ui-bootstrap-tpls.min.js.download"></script>
-    <script src="./AICTE Inernship Certification Management Portal_files/angular-ui-utils.min.js.download"></script>
-    <script type="text/javascript" charset="utf8"
-      src="./AICTE Inernship Certification Management Portal_files/jquery.dataTables.js.download"></script>
-    <script src="./AICTE Inernship Certification Management Portal_files/dataTables.bootstrap.min.js.download"></script>
-
-    <script src="./AICTE Inernship Certification Management Portal_files/ckeditor.js.download"></script>
-    <script src="./AICTE Inernship Certification Management Portal_files/angular-ckeditor.js.download"></script>
-    <script src="./AICTE Inernship Certification Management Portal_files/dataTables.buttons.min.js.download"></script>
-    <script src="./AICTE Inernship Certification Management Portal_files/jszip.min.js.download"
-      integrity="sha512-y3o0Z5TJF1UsKjs/jS2CDkeHN538bWsftxO9nctODL5W40nyXIbs0Pgyu7//icrQY9m6475gLaVr39i/uh/nLA=="
-      crossorigin="anonymous"></script>
-    <script src="./AICTE Inernship Certification Management Portal_files/buttons.colVis.min.js.download"></script>
-    <script src="./AICTE Inernship Certification Management Portal_files/buttons.flash.min.js.download"></script>
-    <script src="./AICTE Inernship Certification Management Portal_files/buttons.html5.min.js.download"></script>
-    <script src="./AICTE Inernship Certification Management Portal_files/buttons.print.min.js.download"></script>
-    <script
-      src="./AICTE Inernship Certification Management Portal_files/angular-datatables.buttons.min.js.download"></script>
-    <script src="./AICTE Inernship Certification Management Portal_files/angular-resource.js.download"></script>
-    <script src="./AICTE Inernship Certification Management Portal_files/angular-busy.js.download"
-      integrity="sha512-2PrHWUeavJCJBlI9kigBFmivpngZYIa8kvM4rI7pDVNWqKdwanTk7keJgpO8OxaxOcyitwKvn7rv3NbM20QpXg=="
-      crossorigin="anonymous"></script>
-
-
-    <script src="./AICTE Inernship Certification Management Portal_files/fastclick.js.download"></script>
-    <!-- AdminLTE App -->
-    <script src="./AICTE Inernship Certification Management Portal_files/app.min.js.download"></script>
-    <!-- AdminLTE for demo purposes -->
-    <script src="./AICTE Inernship Certification Management Portal_files/demo.js.download"></script>
-    <script src="./AICTE Inernship Certification Management Portal_files/global.js.download"></script>
-    <!-- Grunt Livereload -->
-    <!-- <script src="//localhost:35729/livereload.js"></script> -->
-
-
+    
   </div>
   <div id="volume-booster-visusalizer">
     <div class="sound">
